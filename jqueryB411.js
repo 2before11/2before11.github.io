@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
 	
+		
 	// main height
 	
 	var screenHeight =  $(window).height(); 
@@ -34,16 +35,42 @@ $(document).ready(function(){
 	var widthScreen = Math.round(heightScreen * 0.5625);
 	divScreenshots.css('width', widthScreen);
 	
-	var rightMargin = 0
-	while (rightMargin == 0){
+	
+	/*
+	var iPhoneImage = $('.iPhone_image');
+	var widthIphoneImage = iPhoneImage.width();
+	var rightMargin = Math.round(widthIphoneImage * 0.08);
+	divScreenshots.css("right",rightMargin);
+	
+	if (rightMargin == 0){
+		rightMargin = Math.round(widthIphoneImage * 0.08);
+		divScreenshots.css("right",rightMargin);
+		console.log("did the if")
+	}
+	
+	
+	while (rightMargin <= 0){
 		var iPhoneImage = $('.iPhone_image');
 		var widthIphoneImage = iPhoneImage.width();
 		rightMargin = Math.round(widthIphoneImage * 0.08);
 		divScreenshots.css("right",rightMargin);
+		console.log("in while loop")
+		
 	}
+	*/
+	console.log("hello1")
 	
+	$("#iPhoneImage").on("load", function(){
+	console.log("hello2")
+	var iPhoneImage = $('.iPhone_image');
+	var widthIphoneImage = iPhoneImage.width();
+  	var rightMargin = Math.round(widthIphoneImage * 0.08);
+	$('.screenshots').css("right",rightMargin);
+	});
 	
 });
+
+
 	
 	
 $(window).on("resize",function(){
@@ -80,3 +107,5 @@ $(window).on("resize",function(){
 	divScreenshots.css("right",leftMargin);
 	
 });
+
+
