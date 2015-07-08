@@ -86,7 +86,6 @@ abbr,acronym { border: 0;
 }
 
 .screenshots {
-	background: aqua;
   position: absolute;
   z-index: 3;
   width: 58%;
