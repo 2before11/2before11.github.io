@@ -36,36 +36,21 @@ $(document).ready(function(){
 	divScreenshots.css('width', widthScreen);
 	
 	
-	/*
-	var iPhoneImage = $('.iPhone_image');
-	var widthIphoneImage = iPhoneImage.width();
-	var rightMargin = Math.round(widthIphoneImage * 0.08);
-	divScreenshots.css("right",rightMargin);
-	
-	if (rightMargin == 0){
-		rightMargin = Math.round(widthIphoneImage * 0.08);
-		divScreenshots.css("right",rightMargin);
-		console.log("did the if")
-	}
-	
-	
-	while (rightMargin <= 0){
+	$("#iPhoneImage").on("load", function(){
+		console.log("hello2")
 		var iPhoneImage = $('.iPhone_image');
 		var widthIphoneImage = iPhoneImage.width();
-		rightMargin = Math.round(widthIphoneImage * 0.08);
-		divScreenshots.css("right",rightMargin);
-		console.log("in while loop")
-		
-	}
-	*/
-	console.log("hello1")
+		var rightMargin = Math.round(widthIphoneImage * 0.08);
+		$('.screenshots').css("right",rightMargin);
+	});
 	
-	$("#iPhoneImage").on("load", function(){
-	console.log("hello2")
-	var iPhoneImage = $('.iPhone_image');
-	var widthIphoneImage = iPhoneImage.width();
-  	var rightMargin = Math.round(widthIphoneImage * 0.08);
-	$('.screenshots').css("right",rightMargin);
+	$("#readMore").click(function(){
+		console.log("read more button pressed")
+		$('.bottomDiv').css("display","block");
+		
+		$('html, body').delay(200).animate({
+        	scrollTop: $(".bottomDiv").offset().top
+    		}, 500);
 	});
 	
 });

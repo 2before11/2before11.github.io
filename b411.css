@@ -142,8 +142,90 @@ abbr,acronym { border: 0;
 	top:10%;	
 }
 
+.bottomDiv {
+	width:100%;
+	display: none;
+	background-color: #F5F5F5;
+	position: absolute;
+}
+
+.gradientDividerDiv{
+	width:100%;
+	height:20px;
+	background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.1) 25%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.3)), color-stop(25%,rgba(0,0,0,0.1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.1) 25%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.1) 25%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.1) 25%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.1) 25%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.sectionDiv{
+	margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.sectionTextDiv{
+	  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 10%;
+  width: 40%;
+  position: relative;
+    display: inline-block;
+	  vertical-align: middle;
+
+}
+
+.leftText{
+	margin-left: 20%;
+	width: 35%;
+}
 
 
+
+.sectionImageDiv{
+	    position: relative;
+  width: 30%;
+  display: inline-block;
+    vertical-align: middle;
+	    margin-left: 15%;
+
+
+}
+
+.rightImage{
+	margin-left:5%;
+}
+
+.sectionImage{
+	width:100%;
+}
+
+#surfImageDiv{
+	width:50%;
+	margin-left: 0;
+}
+
+#surfText{
+	margin-left:5%;
+}
+
+#shortToLongTerm{
+	width:35%;
+}
+
+.theAskDiv{
+	text-align: center;
+  	margin-top: 120px;
+	margin-bottom: 60px;
+}
+
+.footer {
+	  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
  
  
 /* Typography
@@ -153,6 +235,7 @@ body{
 	font-family: "Helvetica Neue","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	color: #333;
 	color: rgba(0,0,0,0.83);
+	background-color: #000;
 }
  
 h1 {
@@ -176,6 +259,37 @@ h2 {
 
 h2#subtitle {
 }
+
+h3{
+	font-size: 36px;
+  	font-weight: 100;
+	margin-bottom:10px;
+	
+}
+
+h4{
+	font-size: 23px;
+  font-weight: 100;
+  font-style: italic;
+  margin-bottom: 26px;
+}
+
+
+.sectionDiv p {
+	font-weight: 200;
+  	color: rgba(0, 0, 0, 0.4);
+	padding-right: 30%;
+	font-size: 17px;
+  line-height: 1.4;
+}
+
+.footer p {
+	  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 100;
+}
+
+
 
 
 
