@@ -124,8 +124,8 @@ abbr,acronym { border: 0;
 }
 
 .rightBottomImage {
-	width:30px;
-	height:30px;
+	width:40px;
+	height:40px;
 	position:absolute;
 	top:5px;
 	right: 6px;
@@ -373,9 +373,103 @@ h4{
 
 
 
+/* Media Queries
+ * --------------------------------------- */
+
+@media only screen 
+    and (max-device-width: 640px), 
+    only screen and (max-device-width: 667px), 
+    only screen and (max-width: 480px)
+{
+	
+	.phoneContainerDiv {
+  display: none;
+  width:0;
+}
+	
+	.textDiv {
+  width: 100%;
+	}
+	
+	.myButtons {
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
+  border-radius: 16px;
+  padding: 30px 60px;
+  font-size: 30pt;
+}
+
+.rightBottomImage {
+	height:80px;
+}
+	
+	h1 {
+  font-size: 120px;
+	}
+	
+	h2 {
+  font-size: 48px;
+	}
+	
+	h3 {
+  font-size: 70px;
+    margin-bottom: 30px;
+	}
+	
+	.sectionDiv p {
+  padding-right: 10%;
+  padding-left: 10%;
+  text-align: left;
+    font-size: 36px;
+  line-height: 1.6;
+	}
+	
+	.menuButton {
+  font-size: 40px;
+	}
+	
+	
+	
+	.sectionDiv {
+  text-align: center;
+}
+
+.sectionTextDiv {
+  width: 90%;
+  padding-top: 80px;
+  padding-bottom:60px;
+}
 
 
+.sectionImageDiv {
+  margin-left: 0%;
+  width:80%;
+}
 
+.leftText {
+  margin-left: 0%;
+  width: 90%;
+}
+
+h4 {
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+	
+.footer p {
+  font-size: 32px;
+}
+
+#shortToLongTerm {
+  width: 80%;
+}
+
+#surfImageDiv {
+  width: 80%;
+}
+	
+	
+}
 
 
 	

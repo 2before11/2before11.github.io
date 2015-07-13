@@ -13,7 +13,7 @@ $(document).ready(function(){
 	
 	var marginRight = 12;
 	var marginBottom = marginRight;
-	var imageHeight = 40;
+	var imageHeight = $(".rightBottomImage").height();
 	var yPositionIconImage = screenHeight - imageHeight - marginBottom
 	
 	$(".rightBottomImage").css("top",yPositionIconImage);
@@ -34,6 +34,15 @@ $(document).ready(function(){
 	var heightScreen = divScreenshots.height();
 	var widthScreen = Math.round(heightScreen * 0.5625);
 	divScreenshots.css('width', widthScreen);
+	
+	
+	// check if on an iPhone
+	
+	if ($(".phoneContainerDiv").width() == 0){
+		console.log("oniPhone")
+		$("#shortToLongTermText").insertAfter("#shortToLongTerm")
+		$("#bucketlistText").insertAfter("#bucketlist")
+	}
 	
 	
 	$("#iPhoneImage").on("load", function(){
@@ -65,7 +74,7 @@ $(window).on("resize",function(){
 	
 	var marginRight = 12;
 	var marginBottom = marginRight;
-	var imageHeight = 40;
+	var imageHeight = $(".rightBottomImage").height();
 	var yPositionIconImage = screenHeight - imageHeight - marginBottom
 	
 	$(".rightBottomImage").css("top",yPositionIconImage);
