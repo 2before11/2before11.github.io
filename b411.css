@@ -169,7 +169,7 @@ abbr,acronym { border: 0;
 .sectionTextDiv{
 	  padding-top: 40px;
   padding-bottom: 40px;
-  margin-left: 10%;
+  margin-left: 5%;
   width: 40%;
   position: relative;
     display: inline-block;
@@ -195,7 +195,7 @@ abbr,acronym { border: 0;
 }
 
 .rightImage{
-	margin-left:5%;
+	margin-left:0%;
 }
 
 .sectionImage{
@@ -203,7 +203,7 @@ abbr,acronym { border: 0;
 }
 
 #surfImageDiv{
-	width:50%;
+	width:45%;
 	margin-left: 0;
 }
 
